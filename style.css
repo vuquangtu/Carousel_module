@@ -1,0 +1,56 @@
+body {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel .slider {
+  display: flex;
+}
+
+.icons {
+  display: flex;
+
+  height: 50px;
+  justify-content: center;
+  padding: auto;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon {
+  background: white;
+  margin-right: 10px;
+  border: 1px solid black;
+
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.icon.active {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.buttonChange .left,
+.buttonChange .right {
+  position: absolute;
+  top: 50%;
+
+  scale: 2;
+}
+
+.buttonChange .right {
+  right: 10px;
+}
+
+.buttonChange .left {
+  left: 10px;
+}
